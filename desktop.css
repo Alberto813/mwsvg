@@ -1,0 +1,20 @@
+.header--navi-bar {
+    display: flex;
+    align-items: center;
+}
+.header--navi-bar .nav-bar--items li {
+    display: inline;
+}
+.header--menu-icon {
+    display: none;
+}
+.main--example-codes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main--example-codes .example-codes--card {
+    width: 40%;
+    min-width: 400px;
+    max-width: 700px;
+}
