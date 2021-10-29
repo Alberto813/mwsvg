@@ -92,7 +92,7 @@ header img {
     width: 1.3rem;
     height: .8rem;
     margin-left: 1rem;
-    background-image: url(./assets/icons/mdi_keyboard_arrow_down.svg);
+    background-image: url("./assets/icons/arrowmore.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,7 +123,6 @@ main {
     height: 20rem;
     margin: 0 auto;
     margin-bottom: 5rem;
-    background-image: url("./assets/icons/Bitcoin.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +214,7 @@ main {
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 1rem;
-    background-image: url("./assets/icons/trending-down\ 1.svg");
+    background-image: url("./assets/icons/downtrending.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -225,7 +224,7 @@ main {
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 1rem;
-    background-image: url("./assets/icons/trending-up\ 1.svg");
+    background-image: url("./assets/icons/uptrending.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +272,7 @@ main {
     height: 2.5rem;
     top: -1rem;
     left: calc(50% - 2rem);
-    background-image: url("./assets/icons/batata.png");
+    background-image: url("./assets/icons/batata.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -324,13 +323,13 @@ main {
     background-image: url("./assets/icons/clock\ .svg");
 }
 .product-detail--card .eye {
-    background-image: url("./assets/icons/eye\ 1.svg");
+    background-image: url("./assets/icons/eye\ .svg");
 }
 .product-detail--card .dollar {
-    background-image: url("./assets/icons/dollar-sign\ 1.svg");
+    background-image: url("./assets/icons/dollar.svg");
 }
 .product-detail--card .check {
-    background-image: url("./assets/icons/check-circle\ 1.svg");
+    background-image: url("./assets/icons/checked.svg");
 }
 .product-detail--card .product-card-title {
     color: var(--White);
@@ -349,7 +348,7 @@ main {
     width: 100vw;
     min-width: 32rem;
     height: 50vh;
-    background-image: url("./assets/imgs/bitcoinbaby\ x2.jpg");
+    background-image: url("./assets/imgs/bitcoinbaby\ 1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -462,7 +461,7 @@ main {
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image: url("./assets/icons/arrow-right\ 1.svg");
+    background-image: url("./assets/icons/arrow-next.svg");
     vertical-align: bottom;
     background-position: center;
     background-size: cover;

@@ -225,11 +225,19 @@ main .main--information-cards {
     left: calc(50% - 50px);
     border: transparent;
     background-color: var(--warm-black);
-    color: var(--logo-green);
     width: 100px;
     height: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 var(--shadow-light);
+}
+.cards button a {
+    color: var(--logo-green);
+}
+.cards button a:hover {
+    color: var(--button-medium-green);
+}
+.cards button a:active {
+    color: var(--button-light-green);
 }
 .cards button:hover {
     zoom: 1.05;

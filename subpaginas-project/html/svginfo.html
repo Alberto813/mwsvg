@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es SVG? | MakedWidthSVG</title>
+    <link rel="stylesheet" href="../../smartphone.css" media="screen and (min-width: 320px)">
+    <link rel="stylesheet" href="../../desktop.css" media="screen and (min-width: 900px)">
+</head>
+<body>
+    <header>
+        <!-- LOGO DE LA PAGINA -->
+        <div class="header--logo" title="Maked With SVG">
+        <svg class="logo--figure" id="logo" width="50">
+            <rect x="10" y="5" width="20" height="20" stroke="transparent" fill="#510605" stroke-width="1"/>
+            <rect x="18" y="20" width="15" height="15" stroke="transparent" fill="#04a505" stroke-width="1"/>
+            <rect x="12" y="16" width="12" height="12" stroke="transparent" fill="#f1df05" stroke-width="1"/>
+        </svg>
+        <p class="logo--text">Maked with SVG</p>
+        </div>
+        <!-- MENU ICON MOBILE DEVICES ONLY -->
+        <div class="header--menu-icon">
+        <svg width="40" height="40">
+            <line class="x-line1" stroke="#f5f5f5" stroke-width="4" x1="5" y1="10" x2="35" y2="10"/>
+            <line class="hide-line" stroke="#f5f5f5" stroke-width="4" x1="5" y1="20" x2="35" y2="20"/>
+            <line class="x-line2" stroke="#f5f5f5" stroke-width="4" x1="5" y1="30" x2="35" y2="30"/>
+        </svg>
+        </div>
+        <!-- NAVEGACION EN WEB -->
+        <nav class="header--navi-bar">
+            <ul class="nav-bar--items">
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="../../projects.html">PROYECTOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="directory-guide">
+            <nav>
+                <ul>
+                    <li>Proyecto</li>
+                    <li>¿Que es SVG?</li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="sidebar">
+            
+        </section>
+
+        <section class="principal-window">
+
+            <h1>¿Que es SVG? y aprender a usarlo</h1>
+            <p>
+                SVG por sus siglas en ingles: "Scalable Vector Graphics." No es mas que un grafico de vectores que se puede escalar, dandole la ventaja de poder representarse
+                en tamaños relativos de acuerdo a la ventana del dispostivo donde se esta visualizando, o en tamaños predefinidos ya sea pequeños, medianos o grandes sin peder
+                calidad.
+            </p>
+            <p>
+                Bien empezando por lo basico, ¿como funciona svg en html?
+                svg en html funciona mediante coordenadas en un plano carteasiano, y mediante los diferentes puntos establecidos dentro de ese plano trazara ya sea una linea, una curva, un arco, cualquier poligono, cuadrado o circulo que se le indique, de esta forma puedes crear arte vectorial desde html al igual como lo harias con programas como Adobe Illustrador.
+            </p>
+            <p>
+                Cabe aclarar que hay programas en los cuales puedes extraer el codigo svg de documentos de arte vectorial, bien si no pudieras descargar formatos svg de los iconos que deseas, o no puedes hacerlos desde programas con una interfaz grafica podrias empezar a aprender por dibujarlos manualmente.
+            </p>
+            <p>
+                Ahora que ya tienes una idea de lo que es sbg y como funciona, para empezar a utilizar la etiqueta svg hay varias etiquetas internas de este mismo para que puedas hacer formas basicas rapidamente.
+            </p>
+            <ul>
+                <li>Line</li>
+                <li>Rect</li>
+                <li>Circle</li>
+                <li>Polygonine</li>
+                <li>Polygon</li>
+                <li>Path</li>
+            </ul>
+
+            <article class="types-of-shapes line">
+                <h2>LINE - Linea recta</h2>
+                <p>Line es la etiqueta que se utiliza para crear lineas rectas de forma rapida, tambien se puede utilizar la etiqueta Path una forma un poco mas compleja pero mas especializada en crear formas personalizadas, el Line cuenta con varios atributos especificos y necesarios "x1" es el atributo que le indica a la linea en que pocision inicial de la coordenada X debera empezar. "y1" es el atributo que se utiliza para definir la pocision inicial de la linea en su coordenada Y, despues contamos con los atributos "x2 & y2" quienes definen la pocision final de la linea en el plano carteasiano a continuacion te dejaremos un ejemplo de una linea que cruza entre el plano desde su cordenada 5,5 95,95</p>
+                <figure>
+                    <svg width="100" height="100">
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                        <line x1="5" y1="5" x2="95" y2="95" stroke="#333" stroke-width="2"/>
+                        <circle cx="5" cy="5" r="2" fill="#f00"/>
+                        <circle cx="95" cy="95" r="2" fill="#f00"/>
+                    </svg>
+                    <figcaption>El plano cortesiano es similar al de canvas u otro programa de creacion de vectores teniendo la coordenada 0,0 en la esquina superior izquierda y la cantidad de coordenadas dependera del ancho y alto que se le de el formato svg en pixeles, para este ejemplo se usaron 100px</figcaption>
+                </figure>
+            </article>
+
+            <article class="types-of-shapes Rect">
+                <h2>RECT - Cuadrado</h2>
+                <p>Rect es la etiqueta utilizada para crear cuadradons de forma rapida, al igual que con la linea, un cuadrado se puede hacer con la etiqueta path, esta etiqueta tiene 2 atributos diferentes a Line que son Width y Height, definen el ancho y el alto que tendra el cuadrado o en su caso rectangulo. Aqui ya no contamos con los atributos x2 &y2, uncamente utilizaremos x & y para definir el lugar donde empezara a crecer el cuadro.
+                    NOTA: hay una propiedad extra en la etiqueta cuadrado que te ayudara a redondear los bordes y son RX y RY cada uno redondeara las esquinas de las cordenadas x o y, sus valores se definen en px
+                </p>
+                <figure>
+                    <svg width="100" height="100">
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                        <rect x="2" y="2" width="30" height="30" fill="#333"/>
+                        <rect x="70" y="60" width="22" height="25" fill="#d83" stroke="#333" stroke-width="1"/>
+                    </svg>
+                    <figcaption>En el anterior grafico pudimos apreciar 2 cuadros en el plano de diferente colores, si fuiste minucioso pudiste notar que el cuadro naranja cuenta con un borde gris oscuro, y esta es otra propiedad que tienen los tag dentro de SVG llamado Stroke y tiene 2 valores: color y ancho.</figcaption>
+                </figure>
+            </article>
+
+            <article class="types-of-shapes Circle">
+                <h2>CIRCLE - Circulo</h2>
+                <p></p>
+                <figure>
+                    <svg>
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                    </svg>
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+
+            <article class="types-of-shapes Polygonine">
+                <h2>POLYGONINE - Poligonos lineales</h2>
+                <p></p>
+                <figure>
+                    <svg>
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                    </svg>
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+
+            <article class="types-of-shapes Polygon">
+                <h2>POLYGON - Poligonos en area</h2>
+                <p></p>
+                <figure>
+                    <svg>
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                    </svg>
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+
+            <article class="types-of-shapes Path">
+                <h2>PATH - Patron de puntos personalizados</h2>
+                <p></p>
+                <figure>
+                    <svg>
+                        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+                        <line x1="50" y1="0" x2="50" y2="100" stroke="#00f" stroke-width="1"/>
+                        <line x1="0" y1="50" x2="100" y2="50" stroke="#0f0" stroke-width="1"/>
+                    </svg>
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer--top">
+            <section class="top--left">
+                <ul id="contact">
+                    <li><a href="https://github.com/Alberto813">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://patreon.com/Alberto813">Patreon</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </section>
+            <section class="top--right">
+                <div class="right--logo" title="Maked With SVG">
+                    <svg class="logo--figure" id="logo" width="50" height="40px">
+                        <rect x="10" y="5" width="20" height="20" stroke="transparent" fill="#510605" stroke-width="1"/>
+                        <rect x="18" y="20" width="15" height="15" stroke="transparent" fill="#04a505" stroke-width="1"/>
+                        <rect x="12" y="16" width="12" height="12" stroke="transparent" fill="#f1df05" stroke-width="1"/>
+                    </svg>
+                    <p class="logo--text">Maked with SVG</p>
+                </div>
+            </section>
+        </section>
+        <section class="footer--bottom">
+            <p>&copy;Copyright 2021 - 2031. Todos los derechos reservados. | Made by Alberto Montiel Reyes</p>
+        </section>
+    </footer>
+</body>
+</html>

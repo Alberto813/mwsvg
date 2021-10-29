@@ -1,0 +1,44 @@
+main {
+    padding-top: 19.4rem;
+    height: 83vh;
+}
+.search {
+    margin-top: -.3rem;
+    max-width: 58.2rem;
+}
+.search input {
+    height: 4.6rem;
+}
+.header-left {
+    display: none;
+}
+.header-rigth {
+    padding-right: 2rem;
+}
+.header-rigth--menu-text {
+    display: flex;
+    margin-right: 2rem;
+}
+.menu-text--items a {
+    font-weight: lighter;
+    color: black;
+}
+main .buttons {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.buttons button {
+    border: none;
+    width: 15.6rem;
+    height: 3.6rem;
+    border-radius: .2rem;
+    background-color: #f8f9fa;
+}
+.buttons button:hover {
+    box-shadow: 0 .1rem .6rem 0 #00000050;
+}
+footer {
+    padding-top: 2rem;
+}
