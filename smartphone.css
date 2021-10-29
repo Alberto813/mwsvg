@@ -1,6 +1,6 @@
 :root {
     /*COLORS*/
-    --soft-gray: #fefefe;
+    --soft-gray: #f2f2f2;
     --just-white: #fff;
     --just-black: #000;
     --warm-black: #282623;
@@ -11,6 +11,8 @@
     --logo-red: #510605;
     --logo-yellow: #f1df05;
     --logo-green: #04a505;
+    --button-light-green: #00ff00;
+    --button-medium-green: #00c400;
 }
 * {
     box-sizing: border-box;
@@ -34,6 +36,7 @@ header {
     background-color:var(--just-black);
     box-shadow: 0 0 5px 0 var(--shadow-intense);
     position: fixed;
+    z-index: 20;
 }
 .header--navi-bar {
     display: none;
@@ -128,6 +131,31 @@ main .main--example-codes {
     padding: 20px 0;
     background-color: var(--warm-black);
 }
+.main--example-codes .example-codes--top {
+    width: 100%;
+    min-width: 320px;
+}
+.example-codes--top .top--title {
+    text-align: center;
+    width: 80%;
+    min-width: 288px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.top--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--soft-gray);
+    margin-bottom: 20px;
+}
+.top--title p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-bottom: 30px;
+}
 .main--example-codes .example-codes--card {
     width: 80%;
     min-width: 288px;
@@ -149,7 +177,7 @@ main .main--example-codes {
 }
 .example-codes--card p {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.8rem;
     color: var(--soft-gray);
 }
@@ -157,6 +185,61 @@ main .main--svg-draw {
     width: 100vw;
     height: 320px;
     background-color: #FAE4DF;
+}
+main .main--information-cards {
+    background-color: var(--soft-gray);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main--information-cards .cards {
+    width: 80%;
+    min-width: 288px;
+    max-width: 800px;
+    background-color: var(--just-white);
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 var(--shadow-light);
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+.cards h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin-bottom: 5px;
+}
+.cards p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.cards button {
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 50px);
+    border: transparent;
+    background-color: var(--warm-black);
+    color: var(--logo-green);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 var(--shadow-light);
+}
+.cards button:hover {
+    zoom: 1.05;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 var(--shadow-medium);
+    color: var(--button-medium-green);
+}
+.cards button:active {
+    zoom: 1.1;
+    color: var(--button-light-green);
 }
 footer {
     width: 100vw;

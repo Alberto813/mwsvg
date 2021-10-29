@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWSVG</title>
-    <link rel="stylesheet" href="/smartphone.css" media="screen and (min-width: 320px)">
-    <link rel="stylesheet" href="/desktop.css" media="screen and (min-width: 900px)">
+    <title>Inicio | MakedWithSVG</title>
+    <link rel="stylesheet" href="./smartphone.css" media="screen and (min-width: 320px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 900px)">
 </head>
 <body>
     <header>
@@ -22,16 +22,16 @@
         <!-- MENU ICON MOBILE DEVICES ONLY -->
         <div class="header--menu-icon">
         <svg width="40" height="40">
-            <line class="x-line1" stroke="#f5f5f5" stroke-width="5" x1="5" y1="10" x2="35" y2="10"/>
-            <line class="hide-line" stroke="#f5f5f5" stroke-width="5" x1="5" y1="20" x2="35" y2="20"/>
-            <line class="x-line2" stroke="#f5f5f5" stroke-width="5" x1="5" y1="30" x2="35" y2="30"/>
+            <line class="x-line1" stroke="#f5f5f5" stroke-width="4" x1="5" y1="10" x2="35" y2="10"/>
+            <line class="hide-line" stroke="#f5f5f5" stroke-width="4" x1="5" y1="20" x2="35" y2="20"/>
+            <line class="x-line2" stroke="#f5f5f5" stroke-width="4" x1="5" y1="30" x2="35" y2="30"/>
         </svg>
         </div>
         <!-- NAVEGACION EN WEB -->
         <nav class="header--navi-bar">
             <ul class="nav-bar--items">
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="#">PROYECTOS</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./projects.html">PROYECTOS</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
                     <polygon points="40,25 80,25 80,72 80,72 30,80 53,47" fill="#f7cb4b"/>
                     <polygon points="40,25 80,25 70,0 40,0 0,0 0,20 33.5,53.5" fill="#e4594a"/>
                     <circle cx="40" cy="40" r="13" fill="#547bba" stroke="white" stroke-width="4"/>
-                    <circle cx="40" cy="40" r="52" fill="transparent" stroke="white" stroke-width="35"/>
+                    <circle cx="40" cy="40" r="52" fill="transparent" stroke="#f2f2f2" stroke-width="35"/>
                 </svg>
                 </div>
             </div>
@@ -82,6 +82,16 @@
         </section>
 <!-- SECCION DE LA INFORMACION ACERCA DEL CODIGO FUENTE PARA FORMATOS SVG -->
         <section class="main--example-codes">
+            <section class="example-codes--top">
+                <div class="top--title">
+                    <h2>
+                        Aqui estan algunos ejemplos
+                    </h2>
+                    <p>Te mostraremos como hemos elaborado los 3 primeros logos del inicio y unos mas, si quieres aprender como funciona svg y como empezar a dibujar de esta forma,
+                        te invito a que leas nuestra seccion de introducción a como funciona SVG.
+                    </p>
+                </div>
+            </section>
             <!-- CARTA DE MICROSOFT -->
             <article class="example-codes--card">
                 <svg class="card--logo-microsoft" width="20" height="20">
@@ -117,8 +127,8 @@
 
                 <p>
                     &#60;svg class="logo-youtube" width="20" height="20"&#62;
-                    &#60;rect x="5" y="16" width="70" height="48" rx="8" ry="8" fill="#f00"/&#62;
-                    &#60;polygon points="33,30 33,50 53,40" fill="#fff"/&#62;
+                    &#60;rect x="1.25" y="4" width="17.5" height="12" rx="2" ry="2" fill="#f00"/&#62;
+                    &#60;polygon points="8.5,7.5 8.5,12.5 13.25,10" fill="#fff"/&#62;
                     &#60;/svg&#62;
                 </p>
             </article>
@@ -133,16 +143,16 @@
                 </svg>
 
                 <h2>
-                    Logo de Google Chorme
+                    Logo de Google Chrome
                 </h2>
 
                 <p>
-                    &#60;svg class="logo-microsoft" width="20" height="20"&#62;
-                    &#60;circle cx="40" cy="40" r="36" fill="#00a55d"/&#62;
-                    &#60;polygon points="40,25 80,25 80,72 80,72 30,80 53,47" fill="#f7cb4b"/&#62;
-                    &#60;polygon points="40,25 80,25 70,0 40,0 0,0 0,20 33.5,53.5" fill="#e4594a"/&#62;
-                    &#60;circle cx="40" cy="40" r="13" fill="#547bba" stroke="white" stroke-width="4"/&#62;
-                    &#60;circle cx="40" cy="40" r="52" fill="transparent" stroke="white" stroke-width="35"/&#62;
+                    &#60;svg class="logo-Chrome" width="20" height="20"&#62;
+                    &#60;circle cx="10" cy="10" r="9" fill="#00a55d"/&#62;
+                    &#60;polygon points="10,6.25 20,6.25 20,18 20,40 7.5,20 13.25,11.75" fill="#f7cb4b"/&#62;
+                    &#60;polygon points="10,6.25 20,6.25 17.5,0 10,0 0,0 0,5 8.375,13.375" fill="#e4594a"/&#62;
+                    &#60;circle cx="10" cy="10" r="3.5" fill="#547bba" stroke="white" stroke-width="1"/&#62;
+                    &#60;circle cx="10" cy="10" r="13" fill="transparent" stroke="#201e1c" stroke-width="8.75"/&#62;
                     &#60;/svg&#62;
                 </p>
             </article>
@@ -162,9 +172,53 @@
                     &#60;/svg&#62;
                 </p>
             </article>
+            <article class="example-codes--card">
+                <svg class="card--logo-instagram" width="20" height="20">
+                    <circle cx="10" cy="10" r="3" fill="transparent" stroke="#fff" stroke-width="1"/>
+                    <circle cx="15" cy="5" r="1" fill="#fff"/>
+                    <rect x="1" y="1" width="18" height="18" rx="5" ry="5" fill="transparent" stroke="#fff" stroke-width="1.5"/>
+                </svg>
+
+                <h2>
+                    Instagram (Blanco)
+                </h2>
+
+                <p>
+                    &#60;svg class="card--logo-instagram" width="20" height="20"&#62;
+                    &#60;circle cx="10" cy="10" r="3" fill="transparent" stroke="#fff" stroke-width="1"/&#62;
+                    &#60;circle cx="15" cy="5" r="1" fill="#fff"/&#62;
+                    &#60;rect x="1" y="1" width="18" height="18" rx="5" ry="5" fill="transparent" stroke="#fff" stroke-width="1.5"/&#62;
+                    &#60;/svg&#62;
+                </p>
+            </article>
         </section>
+
         <!--SECCION DEL DIBUJO | AREA VISIBLE DEL DIBUJO EN CELULARES A PARTIR DE 800PX Y HASTA 1120PX EN LOS CELULARES MAS PEQUEÑOS-->
         <section class="main--svg-draw">
+        </section>
+
+        <section class="main--information-cards">
+
+            <article class="card--what-is-svg cards">
+                <div class="what-is-svg--title">
+                    <h2>
+                        ¿Qué es SVG y como funciona?
+                    </h2>
+                    <p>
+                        SVG por sus siglas en ingles: "Scalable Vector Graphics." No es mas que un grafico de vectores que se puede escalar, dandole la ventaja de poder representarse
+                        en tamaños relativos de acuerdo a la ventana del dispostivo donde se esta visualizando, o en tamaños predefinidos ya sea pequeños, medianos o grandes sin peder
+                        calidad, si quieres conocer mas, te invito a que les click al boton de abajo para conocer mas acerca de esta maravillosa funcion.
+                    </p>
+                </div>
+                <button class="what-is-svg--button" id="wisb">Saber Mas</button>
+            </article>
+            <article class="card--what-is-blender cards">
+                <div class="what-is-blender--title">
+                    <h2>¿Que es blender y para que sirve?</h2>
+                    <p>Blender es un programa de creacion 3D que nos permite elaborar complejos modelos de objetos, personajes, edificios, entre otras muchas cosas mas sofisticadas y poder asi hacer una animacion de pelicula! conoce mas en nuestra sección dedicada a blender</p>
+                </div>
+                <button class="what-is-blender--button" id="wibb">Saber Mas</button>
+            </article>
         </section>
     </main>
 
@@ -174,7 +228,7 @@
                 <ul id="contact">
                     <li><a href="https://github.com/Alberto813">Github</a></li>
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Patreon</a></li>
+                    <li><a href="https://patreon.com/Alberto813">Patreon</a></li>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Youtube</a></li>
                     <li><a href="#">Instagram</a></li>
@@ -192,7 +246,7 @@
             </section>
         </section>
         <section class="footer--bottom">
-            <p>&copy;Copyright 2021 - 2031. Todos los derechos reservados. | Maded by Alberto M.R.</p>
+            <p>&copy;Copyright 2021 - 2031. Todos los derechos reservados. | Made by Alberto Montiel Reyes</p>
         </section>
     </footer>
 </body>

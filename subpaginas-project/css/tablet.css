@@ -1,0 +1,13 @@
+.main-tables-contaniner {
+    justify-content: center;
+}
+.plan-cards--slider {
+    justify-content: center;
+}
+.product-card--container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 102.4rem;
+    margin: 0 auto;
+}
