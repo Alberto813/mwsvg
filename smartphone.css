@@ -1,5 +1,4 @@
 /*GLOBALES*/
-
 :root {
     /*COLORS*/
     --soft-gray: #f2f2f2;
@@ -83,7 +82,7 @@ header .header--logo {
 header .header--menu-icon {
     position: absolute;
     padding-top: 10px;
-    right: calc(10% - 25px);
+    right: calc(15% - 30px);
     -webkit-user-select: none;
     user-select: none;
 }
@@ -141,9 +140,9 @@ header .header--menu-icon {
     display: flex;
     justify-content: flex-start;
     padding: 80px;
-    width: 300px;
+    width: 330px;
     height: 100vh;
-    left: 50px;
+    left: 130px;
     transform-origin: 0% 0%;
     transform: translate( 0%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -164,7 +163,6 @@ header .header--menu-icon {
 .menu-icon--folding-menu .folding-menu--items li {
     margin-bottom: 15px;
 }
-
 /*MAIN*/
 
 main {
@@ -194,6 +192,16 @@ main .main--short-description {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+.flexbox {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
+}
+.flexbox .flexbox--sidebar {
+    display: none;
+}
+.flexbox .flexbox--projects-container {
+    width: 100%;
+    min-height: 500px;
 }
 .main--short-description .short-description--logos {
     width: 90%;

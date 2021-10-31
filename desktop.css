@@ -1,3 +1,19 @@
+:root {
+    /*COLORS*/
+    --soft-gray: #f2f2f2;
+    --just-white: #fff;
+    --just-black: #000;
+    --warm-black: #282623;
+    --warm-black2: #201e1c;
+    --shadow-intense: #00000090;
+    --shadow-medium: #00000060;
+    --shadow-light: #00000030;
+    --logo-red: #510605;
+    --logo-yellow: #f1df05;
+    --logo-green: #04a505;
+    --button-light-green: #00ff00;
+    --button-medium-green: #00c400;
+}
 header .header--nav-bar {
     display: flex;
     align-items: center;
@@ -17,4 +33,19 @@ header .header--nav-bar {
     width: 40%;
     min-width: 400px;
     max-width: 700px;
+}
+.flexbox {
+    width: 100%;
+    display: flex;
+}
+.flexbox .flexbox--sidebar {
+    display: flex;
+    width: 20%;
+    max-width: 200px;
+    min-height: 500px;
+}
+.flexbox .flexbox--projects-container {
+    display: flex;
+    width: 80%px;
+    flex-grow: 1;
 }
