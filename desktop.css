@@ -1,8 +1,8 @@
-.header--navi-bar {
+header .header--nav-bar {
     display: flex;
     align-items: center;
 }
-.header--navi-bar .nav-bar--items li {
+.header--nav-bar .nav-bar--items li {
     display: inline;
 }
 .header--menu-icon {

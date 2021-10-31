@@ -22,15 +22,27 @@
         <div id="inicio">
         </div>
         <!-- MENU ICON MOBILE DEVICES ONLY -->
-        <div class="header--menu-icon">
-        <svg width="40" height="40">
-            <line class="x-line1" stroke="#f5f5f5" stroke-width="4" x1="5" y1="10" x2="35" y2="10"/>
-            <line class="hide-line" stroke="#f5f5f5" stroke-width="4" x1="5" y1="20" x2="35" y2="20"/>
-            <line class="x-line2" stroke="#f5f5f5" stroke-width="4" x1="5" y1="30" x2="35" y2="30"/>
-        </svg>
-        </div>
+            <div class="header--menu-icon">
+                <input type="checkbox">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu-icon--folding-menu">
+                    <ul class="folding-menu--items">
+                        <a href="#">
+                            <li>INICIO</li>
+                        </a><a href="./projects.html">
+                            <li>PROYECTOS</li>
+                        </a><a href="#contact">
+                            <li>CONTACTO</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         <!-- NAVEGACION EN WEB -->
-        <nav class="header--navi-bar">
+        <nav class="header--nav-bar">
             <ul class="nav-bar--items">
                 <li><a href="./index.html">INICIO</a></li>
                 <li><a href="./projects.html">PROYECTOS</a></li>
@@ -62,10 +74,9 @@
                 <div title="Icono de Chrome">
                 <svg class="logo-chrome" width="80" height="80">
                     <circle cx="40" cy="40" r="36" fill="#00a55d"/>
-                    <polygon points="40,25 80,25 80,72 80,72 30,80 53,47" fill="#f7cb4b"/>
-                    <polygon points="40,25 80,25 70,0 40,0 0,0 0,20 33.5,53.5" fill="#e4594a"/>
-                    <circle cx="40" cy="40" r="13" fill="#547bba" stroke="white" stroke-width="4"/>
-                    <circle cx="40" cy="40" r="52" fill="transparent" stroke="#f2f2f2" stroke-width="35"/>
+                    <path d="M 40 24.5 L 72.5 24.5 C 63.5 3.5 32 -5 13 16 L 26 47" fill="#e4594a"/>
+                    <path d="M 40 24.5 L 72.5 24.5 C 82.5 42 72 78 36 75.8 L 52 50" fill="#f7cb4b"/>
+                    <circle cx="40" cy="40" r="14" fill="#547bba" stroke="white" stroke-width="3"/>
                 </svg>
                 </div>
             </div>
@@ -138,10 +149,9 @@
             <article class="example-codes--card">
                 <svg class="card--logo-chrome" width="20" height="20">
                     <circle cx="10" cy="10" r="9" fill="#00a55d"/>
-                    <polygon points="10,6.25 20,6.25 20,18 20,40 7.5,20 13.25,11.75" fill="#f7cb4b"/>
-                    <polygon points="10,6.25 20,6.25 17.5,0 10,0 0,0 0,5 8.375,13.375" fill="#e4594a"/>
-                    <circle cx="10" cy="10" r="3.5" fill="#547bba" stroke="white" stroke-width="1"/>
-                    <circle cx="10" cy="10" r="13" fill="transparent" stroke="#201e1c" stroke-width="8.75"/>
+                    <path d="M 10 6.125 L 18.125 6.125 C 15.875 0.875 8 -1.25 3.25 4 L 6.5 11.75" fill="#e4594a"/>
+                    <path d="M 10 6.125 L 18.125 6.125 C 20.625 10.5 18 19.5 9 18.95 L 13 12.5" fill="#f7cb4b"/>
+                    <circle cx="10" cy="10" r="3.5" fill="#547bba" stroke="white" stroke-width=".75"/>
                 </svg>
 
                 <h2>
@@ -150,11 +160,10 @@
 
                 <p>
                     &#60;svg class="logo-Chrome" width="20" height="20"&#62;
-                    &#60;circle cx="10" cy="10" r="9" fill="#00a55d"/&#62;
-                    &#60;polygon points="10,6.25 20,6.25 20,18 20,40 7.5,20 13.25,11.75" fill="#f7cb4b"/&#62;
-                    &#60;polygon points="10,6.25 20,6.25 17.5,0 10,0 0,0 0,5 8.375,13.375" fill="#e4594a"/&#62;
-                    &#60;circle cx="10" cy="10" r="3.5" fill="#547bba" stroke="white" stroke-width="1"/&#62;
-                    &#60;circle cx="10" cy="10" r="13" fill="transparent" stroke="#201e1c" stroke-width="8.75"/&#62;
+                    &#60;circle cx="40" cy="40" r="36" fill="#00a55d"/&#62;
+                    &#60;path d="M 40 24.5 L 72.5 24.5 C 63.5 3.5 32 -5 13 16 L 26 47" fill="#e4594a"/&#62;
+                    &#60;path d="M 40 24.5 L 72.5 24.5 C 82.5 42 72 78 36 75.8 L 52 50" fill="#f7cb4b"/&#62;
+                    &#60;circle cx="40" cy="40" r="14" fill="#547bba" stroke="white" stroke-width="3"/&#62;
                     &#60;/svg&#62;
                 </p>
             </article>
@@ -197,6 +206,9 @@
 
         <!--SECCION DEL DIBUJO | AREA VISIBLE DEL DIBUJO EN CELULARES A PARTIR DE 800PX Y HASTA 1120PX EN LOS CELULARES MAS PEQUEÑOS-->
         <section class="main--svg-draw">
+            <svg width="200" height="200">
+                <path d=""/>
+            </svg>
         </section>
 
         <section class="main--information-cards">
@@ -232,7 +244,7 @@
                     <li><a href="#">Facebook</a></li>
                     <li><a href="https://patreon.com/Alberto813">Patreon</a></li>
                     <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Youtube</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdrWNkSpRRTd4WJUfody-7w">Youtube</a></li>
                     <li><a href="#">Instagram</a></li>
                 </ul>
             </section>

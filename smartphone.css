@@ -1,3 +1,5 @@
+/*GLOBALES*/
+
 :root {
     /*COLORS*/
     --soft-gray: #f2f2f2;
@@ -26,19 +28,20 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    background-color: var(--soft-gray);
-}
+
+/*HEADER*/
+
 header {
     width: 100vw;
     height: 50px;
     display: flex;
+    justify-content: space-between;
     background-color:var(--just-black);
     box-shadow: 0 0 5px 0 var(--shadow-intense);
     position: fixed;
     z-index: 20;
 }
-.header--navi-bar {
+header .header--nav-bar {
     display: none;
     position: absolute;
     right: calc(10% - 25px);
@@ -77,24 +80,120 @@ header .header--logo {
   font-weight: bold;
   font-size: 1.2rem;
 }
-.header--menu-icon {
+header .header--menu-icon {
     position: absolute;
+    padding-top: 10px;
     right: calc(10% - 25px);
-    height: 40px;
-    align-self: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
+.header--menu-icon input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0%;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    z-index: 2;
+}
+.header--menu-icon span {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--soft-gray);
+    margin-bottom: 5px;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+.header--menu-icon .icon {
+    z-index: 2;
+}
+.header--menu-icon span:first-child {
+    transform-origin: 0% 0%;
+}
+.header--menu-icon span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+.header--menu-icon input:checked ~ .icon > span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(.5px, -2px);
+    background-color: var(--warm-black);
+    z-index: 2;
+}
+.header--menu-icon input:checked ~ .icon > span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    z-index: 2;
+}
+.header--menu-icon input:checked ~ .icon > span:nth-last-child(3) {
+    transform: rotate(45deg) translate(1px , -3px);
+    background-color: var(--warm-black);
+    z-index: 2;
+}
+.header--menu-icon .menu-icon--folding-menu {
+    position: absolute;
+    background-color: var(--soft-gray);
+    margin-top: -50px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 80px;
+    width: 300px;
+    height: 100vh;
+    left: 50px;
+    transform-origin: 0% 0%;
+    transform: translate( 0%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    z-index: 1;
+}
+.header--menu-icon input:checked ~ .menu-icon--folding-menu {
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    z-index: 1;
+    box-shadow: 0 0 300px 100px var(--shadow-medium);
+}
+.menu-icon--folding-menu .folding-menu--items a {
+    text-decoration: none;
+    color: var(--warm-black);
+    font-size: 2rem;
+}
+.menu-icon--folding-menu .folding-menu--items li {
+    margin-bottom: 15px;
+}
+
+/*MAIN*/
+
 main {
     width: 100vw;
     height: auto;
-    padding-top: 60px;
+    padding-top: 20px;
+    overflow-x: hidden;
 }
 main .main--short-description {
     width: 100%;
     min-width: 320px;
-    max-width: 800px;
     height: auto;
     margin: 0 auto;
     padding-bottom: 30px;
+    padding-top: 30px;
+    background: linear-gradient(-45deg, #e4594a, #f7cb4b, #547bba, #00a55d);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .main--short-description .short-description--logos {
     width: 90%;
@@ -116,10 +215,9 @@ main .main--short-description {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.8rem;
-    color: var(--logo-green);
+    color: var(--warm-black);
     margin-bottom: 30px;
 }
-
 .short-description--title p {
     font-size: 1.4rem;
     font-weight: 500;
@@ -182,9 +280,15 @@ main .main--example-codes {
     color: var(--soft-gray);
 }
 main .main--svg-draw {
-    width: 100vw;
+    width: 1000px;
     height: 320px;
-    background-color: #FAE4DF;
+    margin: 0 auto;
+    position: relative;
+}
+.main--svg-draw .svg-draw--car {
+    position: absolute;
+    top: 15px;
+    left: 10px;
 }
 main .main--information-cards {
     background-color: var(--soft-gray);
